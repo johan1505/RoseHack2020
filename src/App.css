@@ -42,3 +42,13 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.center {
+  margin-top: 200px;
+  padding: 10px;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 5px;
+}
