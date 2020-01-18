@@ -1,6 +1,8 @@
 body {
   /* background: linear-gradient(0deg, rgba(2,0,36,1) 10%, rgba(72,156,127,1) 100%, rgba(0,212,255,1) 100%) fixed; */
-  background-color: #61dafb;
+  /*background-color: #61dafb;*/
+  background: url(images/Clouds.jpg);
+  background-size: 1500px 850px;
 }
 
 
