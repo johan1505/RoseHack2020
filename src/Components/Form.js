@@ -4,11 +4,11 @@ class Form extends Component {
     render() {
         return (
         <form>
-                <div className="inputField">
-                    <input type="text" name="cityName" placeholder="City Name..." />
+                <div>
+                    <input className="inputField" type="text" name="cityName" placeholder="City Name..." autoComplete="off" />
                 </div>
                 <div>
-                    <button className="btn"> Generate <br/> Playlist </button>
+                    <button className="btn"> Generate Report </button>
                 </div>
         </form>
         );
