@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+
 body {
   /* background: linear-gradient(0deg, rgba(2,0,36,1) 10%, rgba(72,156,127,1) 100%, rgba(0,212,255,1) 100%) fixed; */
   /*background-color: red;*/
   background: url(images/Clouds.jpg);
   background-size: 1500px 850px;
+  font-family: 'Fredericka the Great';
 }
 
 
@@ -43,4 +46,58 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.center {
+  margin-top: 200px;
+  padding: 10px;
+  color: white;
+}
+
+ .btn {
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 20px ;
+  font-size: large ;
+  background-image: linear-gradient(to bottom right, #015E97 , #0D9AEA);
+  color: white;
+}
+
+.btn:hover {opacity: 0.6}
+.btn:active {
+  color: white;
+} 
+
+
+.userForm {
+  text-align: center;
+}
+
+.inputField[type=text] {
+  background-color:rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+  color: white;
+  width: 400px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+.header1 {
+  font-size: 100px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
 }

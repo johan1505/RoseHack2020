@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { WiBarometer } from "react-icons/wi"
+import Form from '../Components/Form';
 
 class HomePage extends Component {
     render() {
         return (
-            <div>
-                <WiBarometer size = {20*14} /> 
-                <h1>Home Page</h1>
+            <div className="center">
+                <h1 className="header1">Weather</h1>    
+                <Form/>
             </div>
         );
     }
