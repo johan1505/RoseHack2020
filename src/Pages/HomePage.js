@@ -13,7 +13,8 @@ class HomePage extends Component {
         mainDescription: null,
         humidity: null,
         wind: null,
-        error: null
+        error: null,
+        direction: null
     }
     getWeather = async (e) => {
         e.preventDefault();
@@ -26,12 +27,48 @@ class HomePage extends Component {
                 temperature : data.main.temp,
                 humidity: data.main.humidity,
                 wind: data.wind.speed,
-                error:null
+                error:null,
+                direction: this.getDegree(data.wind.deg)
             })
+            //const direction = this.getDegree(data.wind.deg);
+            // this.setState({ 
+            //     direction: direction
+
+            // }) 
+            //console.log(direction);
             console.log(data);
         }
         else {// No city name inputted
             this.displayError();
+        }
+    }
+    getDegree = (degree) => {
+        if (degree >= 0 && degree <= 22) {
+            return "North";
+        }
+        else if (degree > 22 && degree <= 67) {
+            return "North East";
+        }
+        else if (degree > 67 && degree <= 112) {
+            return "East";
+        }
+        else if (degree > 112 && degree <= 157) {
+            return "South East";
+        }
+        else if (degree > 157 && degree <= 202) {
+            return "South";
+        }
+        else if (degree > 202 && degree <= 247) {
+            return "South West";
+        }
+        else if (degree > 247 && degree <= 292) {
+            return "West";
+        }
+        else if (degree > 202 && degree <= 247) {
+            return "North West";
+        }
+        else if (degree > 247) {
+            return "North";
         }
     }
 
@@ -54,7 +91,7 @@ class HomePage extends Component {
                         {this.state.error && <div className="error">{this.state.error}</div>}
                     </div>
                     <div className="col">
-                        <Weather wind={this.state.wind} humidity={this.state.humidity} description={this.state.mainDescription} temperature={this.state.temperature}/>
+                        <Weather wind={this.state.wind} humidity={this.state.humidity} description={this.state.mainDescription} temperature={this.state.temperature} direction={this.state.direction}/>
                     </div>
                 </div>
             </div>
