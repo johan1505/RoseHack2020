@@ -23,6 +23,9 @@ class WeatherPage extends Component {
                <h1>Weather Page</h1>
                <div className = "row">
                     <div className = "col">
+                        <font size = "5"> This is the left column </font>
+                    </div>
+                    <div className = "col">
                         <WiCloudy size={20*14}/>
                         <br></br>
                         <font size = "7"> Temperature </font>
@@ -33,9 +36,6 @@ class WeatherPage extends Component {
                         <br/>
                         <font size = "5"> It is windy.</font>
                     </div> 
-                    <div className = "col">
-                        <font size = "6"> This is the right column </font>
-                    </div>
                 </div>
             </div>
         );
