@@ -35,7 +35,7 @@ class HomePage extends Component {
                         <Form getWeather={this.getWeather}/>
                     </div>
                     <div className="col">
-                        <Weather wind={this.state.wind} humidity={this.state.humidity} decription={this.state.mainDescription} temperature={this.state.temperature}/>
+                        <Weather wind={this.state.wind} humidity={this.state.humidity} description={this.state.mainDescription} temperature={this.state.temperature}/>
                     </div>
                 </div>
             </div>

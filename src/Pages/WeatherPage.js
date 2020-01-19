@@ -20,25 +20,15 @@ class WeatherPage extends Component {
     render() {
         return (
             <div className="WeatherDiv">
-                <div className="row">
                     <WiCloudy size={10*14}/>
-                </div>
-
-                <div className="row">
-                    <font size = "7"> {this.props.temperature} </font>
-                </div>
-
-                <div className="row">
+                    <br/>
+                    {this.props.temperature && <font size = "7"> {this.props.temperature}°</font>}
+                    <br/>
                     <font size = "7"> {this.props.description} </font>
-                </div>
-
-                <div className="row">
+                    <br/>
                     <font size = "5"> {this.props.humidity}</font>
-                </div>
-
-                <div className="row">
+                    <br/>
                     <font size = "5">{this.props.wind} </font>
-                </div>
             </div>
         );
     }
