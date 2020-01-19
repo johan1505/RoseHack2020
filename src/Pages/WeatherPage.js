@@ -21,7 +21,7 @@ class WeatherPage extends Component {
         return (
             <div className="WeatherDiv">
                 <div className="row">
-                    <WiCloudy size={20*14}/>
+                    <WiCloudy size={10*14}/>
                 </div>
 
                 <div className="row">
@@ -29,15 +29,15 @@ class WeatherPage extends Component {
                 </div>
 
                 <div className="row">
-                    <font size = "7"> display message </font>
+                    <font size = "7"> {this.props.description} </font>
                 </div>
 
                 <div className="row">
-                    <font size = "5"> It is humid.</font>
+                    <font size = "5"> {this.props.humidity}</font>
                 </div>
 
                 <div className="row">
-                    <font size = "5"> It is windy.</font>
+                    <font size = "5">{this.props.wind} </font>
                 </div>
             </div>
         );
