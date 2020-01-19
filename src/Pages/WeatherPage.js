@@ -22,13 +22,13 @@ class WeatherPage extends Component {
                     {this.props.description === "Clear" && <WiDaySunny size={10*14}/>}
                     {this.props.description === "Fog" && <WiFog size={10*14}/>}
                     <br/>
-                    {this.props.temperature && <font size = "7"> {this.props.temperature}° C</font>}
+                    {this.props.temperature && <div className="attribute-big fadeIn"> {this.props.temperature}° C</div>}
                     <br/>
-                    {this.props.description && <font size = "7"> {this.props.description} </font>}
+                    {this.props.description && <div className="attribute-big"> {this.props.description} </div>}
                     <br/>
-                    {this.props.humidity && <font size = "5"> Humidity: {this.props.humidity}% </font>}
+                    {this.props.humidity && <div className="attribute"> Humidity: {this.props.humidity}% </div>}
                     <br/>
-                    {this.props.wind && <font size = "5">Wind Speed: {this.props.wind} m/s {this.props.direction}</font>}
+                    {this.props.wind && <div className="attribute"> Wind Speed: {this.props.wind} m/s {this.props.direction}</div>}
             </div>
         );
     }

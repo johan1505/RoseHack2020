@@ -3,14 +3,22 @@
 body {
   /* background: linear-gradient(0deg, rgba(2,0,36,1) 10%, rgba(72,156,127,1) 100%, rgba(0,212,255,1) 100%) fixed; */
   /*background-color: red;*/
-  background: url(images/Clouds.jpg);
-  background-size: 100% 200%;
+  /* background: url(images/Clouds.jpg); */
+  /* background-size: 100% 200%; */
+  background-color: #353b48;
   font-family: 'Fredericka the Great';
 }
 
 .error {
   padding: 30px;
 }
+
+
+.display-container{
+  background-color: #40739e;
+  border-radius: 5%;
+  height: 85vh;
+} 
 
 .App {
   text-align: center;
@@ -46,7 +54,7 @@ body {
 
 
 .userForm {
-  text-align: center;
+  margin-top: 90px;
 }
 
 .inputField[type=text] {
@@ -59,10 +67,11 @@ body {
   margin-top: 20px;
   border-radius: 15px;
   font-size: 30px;
+  border-bottom: solid 1px white;
 }
 
-.header1 {
-  font-size: 100px;
+.main-header {
+  font-size: 70px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -81,4 +90,25 @@ body {
 .WeatherDiv {
   color: white;
   text-align: center;
+}
+
+.attribute {
+  font-size: 20px;
+}
+
+.attribute-big{
+  font-size: 40px;
+}
+
+.fadeIn{
+  -webkit-animation: fadein 1s;
+     -moz-animation: fadein 1s;
+      -ms-animation: fadein 1s;
+       -o-animation: fadein 1s;
+          animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

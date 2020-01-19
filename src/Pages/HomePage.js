@@ -85,12 +85,12 @@ class HomePage extends Component {
         return (
             <div className="center">
                 <div className="row" >
-                    <div className="col">
-                        <h1 className="header1"><WiMoonAltWaningGibbous3/> <br/> Weather</h1>
+                    <div className="col input-container">
+                        <h1 className="main-header"><WiMoonAltWaningGibbous3/> <br/> Weather Informer </h1>
                         <Form getWeather={this.getWeather}/>
                         {this.state.error && <div className="error">{this.state.error}</div>}
                     </div>
-                    <div className="col">
+                    <div className="col display-container ml-5">
                         <Weather wind={this.state.wind} humidity={this.state.humidity} description={this.state.mainDescription} temperature={this.state.temperature} direction={this.state.direction}/>
                     </div>
                 </div>
