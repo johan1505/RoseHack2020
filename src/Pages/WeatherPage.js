@@ -12,14 +12,15 @@ class WeatherPage extends Component {
                 {this.props.description === "Snow" && <WiSnow className="icon fadeIn"/>}
                 {this.props.description === "Clear" && <WiDaySunny className="icon fadeIn"/>}
                 {this.props.description === "Mist" && <WiFog className="icon fadeIn"/>}
+                {this.props.description === "Haze" && <WiFog className="icon fadeIn"/>}
                 <br/>
-                {this.props.temperature && <div className="attribute-big"> {this.props.temperature}° C</div>}
+                {this.props.temperature && <div className="attribute-big"> {this.props.temperature}° F</div>}
                 <br/>
                 {this.props.description && <div className="attribute-big fadeIn"> {this.props.description} </div>}
                 <br/>
                 {this.props.humidity && <div className="attribute fadeIn"> Humidity: {this.props.humidity}% </div>}
                 <br/>
-                {this.props.wind && <div className="attribute fadeIn"> Wind Speed: {this.props.wind} m/s {this.props.direction}</div>}
+                {this.props.wind && <div className="attribute fadeIn"> Wind Speed: {this.props.wind} mph {this.props.direction}</div>}
             </div>
         );
     }

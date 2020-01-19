@@ -24,7 +24,7 @@ class HomePage extends Component {
         e.preventDefault();
         const city = e.target.elements.city.value;
         if (city){
-            const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
+            const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`);
             const data = await api_call.json();
             this.setState({
                 mainDescription : data.weather[0].main,
@@ -100,13 +100,13 @@ class HomePage extends Component {
                     </div>
                     <div className="col display-container ml-5">
                         {this.state.temperature && 
-                            <div> 
+                            <div className="mt-4"> 
                                 <Weather wind={this.state.wind} humidity={this.state.humidity} description={this.state.mainDescription} temperature={this.state.temperature} direction={this.state.direction}/>
                                 <Warnings uv = {this.state.uvIndex}/>
                             </div>   
                         }
                         {!this.state.temperature &&
-                            <h1 style={{marginTop:260}}>Enter a city name!</h1>
+                            <h1 style={{marginTop:280}}>Enter a city name!</h1>
                         }                        
                     </div>
                 </div>
