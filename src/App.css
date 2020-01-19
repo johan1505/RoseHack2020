@@ -8,6 +8,10 @@ body {
   font-family: 'Fredericka the Great';
 }
 
+.error {
+  padding: 30px;
+}
+
 .App {
   text-align: center;
 }
@@ -34,18 +38,6 @@ body {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .center {
   color: white;

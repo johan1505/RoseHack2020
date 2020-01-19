@@ -28,7 +28,7 @@ class WeatherPage extends Component {
                     <br/>
                     <font size = "5"> {this.props.humidity}</font>
                     <br/>
-                    <font size = "5">{this.props.wind} </font>
+                    <font size = "5">{this.props.wind} {this.props.direction} </font>
             </div>
         );
     }
