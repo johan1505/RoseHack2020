@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Form from '../Components/Form';
 import Weather from '../Pages/WeatherPage'
+import { WiMoonAltWaningGibbous3 } from 'react-icons/wi';
+
 
 const API_KEY = "9a693cabc0c6544c67fbc7f797936634";
 
@@ -29,9 +31,9 @@ class HomePage extends Component {
     render() {
         return (
             <div className="center">
-                <h1 className="header1"> Weather</h1>
-                <div className="row">
+                <div className="row" >
                     <div className="col">
+                        <h1 className="header1"><WiMoonAltWaningGibbous3/> <br/> Weather</h1>
                         <Form getWeather={this.getWeather}/>
                     </div>
                     <div className="col">

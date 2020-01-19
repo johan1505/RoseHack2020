@@ -49,9 +49,8 @@ body {
 }
 
 .center {
-  margin-top: 200px;
-  padding: 10px;
   color: white;
+  margin-top: 50px;
 }
 
  .btn {
@@ -105,3 +104,4 @@ body {
 .WeatherDiv {
   color: white;
 }
+
