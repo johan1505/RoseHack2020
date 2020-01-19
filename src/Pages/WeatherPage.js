@@ -22,21 +22,15 @@ class WeatherPage extends Component {
             <div className = "WeatherDiv">
                <h1>Weather Page</h1>
                <div className = "row">
-                    <div className = "col">
-                        <font size = "5"> This is the left column </font>
-                    </div>
-                    <div className = "col">
-                        <WiCloudy size={20*14}/>
-                        <br></br>
-                        <font size = "7"> {this.props.temperature} </font>
-                        <br/>
-                        <br/>
-                        <font size = "5"> It is humid.</font>
-                        <br/>
-                        <br/>
-                        <font size = "5"> It is windy.</font>
-                    </div> 
+                    <WiCloudy size={20*14}/>
                 </div>
+                    <font size = "7"> {this.props.temperature} </font>
+                    <br/>
+                    <br/>
+                    <font size = "5"> It is humid.</font>
+                    <br/>
+                    <br/>
+                    <font size = "5"> It is windy.</font>
             </div>
         );
     }
