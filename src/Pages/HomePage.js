@@ -23,9 +23,15 @@ class HomePage extends Component {
     render() {
         return (
             <div className="center">
-                <h1 className="header1"> Weather</h1>    
-                <Form getWeather={this.getWeather}/>
-                <Weather temperature={this.state.temperature}/>
+                <h1 className="header1"> Weather</h1>
+                <div className="row">
+                    <div className="col">
+                        <Form getWeather={this.getWeather}/>
+                    </div>
+                    <div className="col">
+                        <Weather temperature={this.state.temperature}/>
+                    </div>
+                </div>
             </div>
         );
     }
