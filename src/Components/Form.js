@@ -15,7 +15,7 @@ class Form extends Component {
                 />
             </div>
             <div>
-                <button className="btn"> Generate Report </button>
+                <button className="btn btn-info mt-5"> Generate Report </button>
             </div>
         </form>
         );

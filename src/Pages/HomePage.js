@@ -31,16 +31,19 @@ class HomePage extends Component {
             console.log(data);
         }
         else {// No city name inputted
-            this.setState({
-                temperature : null,
-                mainDescription: null,
-                humidity: null,
-                wind: null,
-                error: "Please enter a valid city name!"
-            })
+            this.displayError();
         }
     }
 
+    displayError = () => {
+        this.setState({
+            temperature : null,
+            mainDescription: null,
+            humidity: null,
+            wind: null,
+            error: "Please enter a valid city name!"
+        });
+    }
     render() {
         return (
             <div className="center">

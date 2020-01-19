@@ -44,20 +44,6 @@ body {
   margin-top: 50px;
 }
 
- .btn {
-  margin-top: 15px;
-  padding: 5px;
-  border-radius: 20px ;
-  font-size: large ;
-  background-image: linear-gradient(to bottom right, #015E97 , #0D9AEA);
-  color: white;
-}
-
-.btn:hover {opacity: 0.6}
-.btn:active {
-  color: white;
-} 
-
 
 .userForm {
   text-align: center;
