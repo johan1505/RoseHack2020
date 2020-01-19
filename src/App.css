@@ -18,10 +18,15 @@ body {
   background-color: #40739e;
   border-radius: 5%;
   height: 85vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .8), 0 1px 2px 0 rgba(0, 0, 0, .8);
 } 
 
 .App {
   text-align: center;
+}
+
+.input-container{
+  margin: 100px;
 }
 
 .App-logo {
@@ -100,6 +105,21 @@ body {
   font-size: 40px;
 }
 
+.warnings{
+  margin-top: 30px;
+}
+
+.warnings span{
+  background-color: red;
+  padding: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3), 0 1px 1px 0 rgba(0, 0, 0, .8);
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.icon{
+  font-size: 150px;
+}
 .fadeIn{
   -webkit-animation: fadein 1s;
      -moz-animation: fadein 1s;
