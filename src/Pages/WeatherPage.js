@@ -22,7 +22,7 @@ class WeatherPage extends Component {
                     {this.props.description === "Clear" && <WiDaySunny size={10*14}/>}
                     {this.props.description === "Fog" && <WiFog size={10*14}/>}
                     <br/>
-                    {this.props.temperature && <font size = "7"> {this.props.temperature}°</font>}
+                    {this.props.temperature && <font size = "7"> {this.props.temperature}° C</font>}
                     <br/>
                     {this.props.description && <font size = "7"> {this.props.description} </font>}
                     <br/>
