@@ -20,7 +20,6 @@ class WeatherPage extends Component {
     render() {
         return (
             <div className = "WeatherDiv">
-               <h1>Weather Page</h1>
                <div className = "row">
                     <div className = "col">
                         <font size = "5"> This is the left column </font>
