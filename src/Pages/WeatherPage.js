@@ -19,17 +19,26 @@ import { WiNightClear } from "react-icons/wi"
 class WeatherPage extends Component {
     render() {
         return (
-            <div className = "WeatherDiv">
-               <div className = "row">
+            <div className="WeatherDiv">
+                <div className="row">
                     <WiCloudy size={20*14}/>
                 </div>
+
+                <div className="row">
                     <font size = "7"> {this.props.temperature} </font>
-                    <br/>
-                    <br/>
+                </div>
+
+                <div className="row">
+                    <font size = "7"> display message </font>
+                </div>
+
+                <div className="row">
                     <font size = "5"> It is humid.</font>
-                    <br/>
-                    <br/>
+                </div>
+
+                <div className="row">
                     <font size = "5"> It is windy.</font>
+                </div>
             </div>
         );
     }
