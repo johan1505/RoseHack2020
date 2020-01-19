@@ -20,7 +20,7 @@ class HomePage extends Component {
         const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
         const data = await api_call.json();
         this.setState({
-            mainDescription : data.weather[0].description,
+            mainDescription : data.weather[0].main,
             temperature : data.main.temp,
             humidity: data.main.humidity,
             wind: data.wind.speed
