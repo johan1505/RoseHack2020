@@ -101,3 +101,7 @@ body {
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
 }
+
+.WeatherDiv {
+  color: white;
+}
