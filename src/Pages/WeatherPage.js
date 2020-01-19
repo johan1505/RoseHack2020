@@ -28,7 +28,7 @@ class WeatherPage extends Component {
                     <div className = "col">
                         <WiCloudy size={20*14}/>
                         <br></br>
-                        <font size = "7"> {this.props.temp} </font>
+                        <font size = "7"> {this.props.temperature} </font>
                         <br/>
                         <br/>
                         <font size = "5"> It is humid.</font>
