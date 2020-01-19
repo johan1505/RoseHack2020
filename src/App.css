@@ -8,6 +8,10 @@ body {
   font-family: 'Fredericka the Great';
 }
 
+.error {
+  padding: 30px;
+}
+
 .App {
   text-align: center;
 }

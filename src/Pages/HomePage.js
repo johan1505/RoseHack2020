@@ -16,9 +16,6 @@ class HomePage extends Component {
         error: null
     }
     getWeather = async (e) => {
-        this.setState({
-            error : null
-        })
         e.preventDefault();
         const city = e.target.elements.city.value;
         if (city){
@@ -28,7 +25,8 @@ class HomePage extends Component {
                 mainDescription : data.weather[0].main,
                 temperature : data.main.temp,
                 humidity: data.main.humidity,
-                wind: data.wind.speed
+                wind: data.wind.speed,
+                error:null
             })
             console.log(data);
         }
@@ -38,7 +36,7 @@ class HomePage extends Component {
                 mainDescription: null,
                 humidity: null,
                 wind: null,
-                error: "Please enter a valid city name"
+                error: "Please enter a valid city name!"
             })
         }
     }
@@ -50,7 +48,7 @@ class HomePage extends Component {
                     <div className="col">
                         <h1 className="header1"><WiMoonAltWaningGibbous3/> <br/> Weather</h1>
                         <Form getWeather={this.getWeather}/>
-                        {this.state.error && <div clas="error">{this.state.error}</div>}
+                        {this.state.error && <div className="error">{this.state.error}</div>}
                     </div>
                     <div className="col">
                         <Weather wind={this.state.wind} humidity={this.state.humidity} description={this.state.mainDescription} temperature={this.state.temperature}/>
