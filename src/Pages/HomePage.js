@@ -24,6 +24,7 @@ class HomePage extends Component {
             temperature : data.main.temp,
             humidity: data.main.humidity,
             wind: data.wind.speed
+            
         })
         console.log(data);
     }
