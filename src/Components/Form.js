@@ -11,6 +11,7 @@ class Form extends Component {
                     type="text"
                     name="city"
                     placeholder="City Name..."
+                    autoComplete="off"
                 />
             </div>
             <div>

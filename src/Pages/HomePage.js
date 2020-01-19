@@ -25,7 +25,7 @@ class HomePage extends Component {
             const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
             const data = await api_call.json();
             this.setState({
-                mainDescription : data.weather[0].description,
+                mainDescription : data.weather[0].main,
                 temperature : data.main.temp,
                 humidity: data.main.humidity,
                 wind: data.wind.speed
@@ -38,7 +38,7 @@ class HomePage extends Component {
                 mainDescription: null,
                 humidity: null,
                 wind: null,
-                error: null
+                error: "Please enter a valid city name"
             })
         }
     }
@@ -50,7 +50,7 @@ class HomePage extends Component {
                     <div className="col">
                         <h1 className="header1"><WiMoonAltWaningGibbous3/> <br/> Weather</h1>
                         <Form getWeather={this.getWeather}/>
-                        {this.state.error && <div>{this.state.error}</div>}
+                        {this.state.error && <div clas="error">{this.state.error}</div>}
                     </div>
                     <div className="col">
                         <Weather wind={this.state.wind} humidity={this.state.humidity} description={this.state.mainDescription} temperature={this.state.temperature}/>
